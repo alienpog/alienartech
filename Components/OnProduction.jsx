@@ -14,7 +14,7 @@ function OnProduction() {
     whileInView={"show"}
     viewport={{once:true, amount: 0.7}} >
         <div className="w-full mb-4 px-4 sm:pl-6 ">
-        <HeaderSection title="In Production" color="#FF3838"  content="Click on the Logo to see the magic 🪄✨ 🎉:"/>
+        <HeaderSection title="In Production" color="#FF3838"  content="Click on the Logo down below to see the magic 🪄✨ 🎉:"/>
         </div>
         <div className="relative ">
         <div className="absolute right-0 h-full w-24 bg-gradient-to-l from-[#FFFFFA] z-10"/>
