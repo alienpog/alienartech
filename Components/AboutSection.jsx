@@ -8,7 +8,7 @@ function AboutSection() {
   return (
     <div id='about-me'>
         <motion.div className='w-full sm:w-1/2 px-3 sm:ml-48 mt-8 sm:mt-24 space-y-2 sm:space-y-6'
-         variants={fadeIn("left", 0.3)}
+         variants={fadeIn("up", 0.3)}
          initial ="hidden"
          whileInView={"show"}
          viewport={{once:true, amount: 0.7}}>

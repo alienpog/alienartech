@@ -47,7 +47,17 @@ export const contents03 = [
   },
   {
     "id": 3,
-    "key": "2D Animations:",
+    "key": "2D Animations",
    "value":" Brought the brand to life through dynamic and engaging 2D animations that captivated audiences and conveyed key brand messages effectively. Leveraging After Effects, I orchestrated visually stunning motion graphics that enhanced storytelling and left a lasting impression on viewers."
   },
+]
+
+export const Project =[
+  {
+    "id": 1,
+    "image": "/asset/projectss/A5 - 1.png",
+    "name": "alienrealtor",
+    "url": "https://alien-realtor.vercel.app/"
+  },
+  
 ]
