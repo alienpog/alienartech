@@ -6,11 +6,13 @@ import{fadeIn} from "../variants"
 
 function Skills() {
   return (
+    <>
+    <div id="skills">{""}</div>
     <motion.div 
     variants={fadeIn("up", 0.3)}
     initial ="hidden"
     whileInView={"show"}
-    viewport={{once:true, amount: 0.7}} className="px-4 mt-8 sm:mt-24" id="skills">
+    viewport={{once:true, amount: 0.7}} className="px-4 mt-8 sm:mt-24" >
         <div className="w-full mb-4 sm:pl-48">
         <HeaderSection title="Skills" color="#866C00"  content="I possess a diverse skill set that includes:"/>
         </div>
@@ -67,6 +69,7 @@ function Skills() {
             
         </div>
     </motion.div>
+    </>
   )
 }
 

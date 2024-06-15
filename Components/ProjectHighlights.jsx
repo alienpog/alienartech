@@ -7,7 +7,10 @@ import {motion} from "framer-motion"
 import{fadeIn} from "../variants"
 function ProjectHighlights() {
   return (
-    <div className=" space-y-12 sm:space-y-24 mt-8 sm:mt-24 " id="projects">
+    <>
+    <div id="projects">{""}</div>
+    <div>{" "}</div>
+    <div className=" space-y-12 sm:space-y-24 mt-8 sm:mt-24 " >
         <motion.div 
          variants={fadeIn("up", 0.3)}
          initial ="hidden"
@@ -150,6 +153,7 @@ function ProjectHighlights() {
         </div>
         </motion.div>
     </div>
+    </>
   )
 }
 

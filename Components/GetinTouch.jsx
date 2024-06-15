@@ -8,11 +8,13 @@ import{fadeIn} from "../variants"
 
 function GetinTouch() {
   return (
+    <>
+    <div id='contact'>{""}</div>
     <motion.div 
     variants={fadeIn("up", 0.3)}
     initial ="hidden"
     whileInView={"show"}
-    viewport={{once:true, amount: 0.7}} className=" mt-8 sm:mt-24 text-[13px] sm:text-sm text-[#5D5D5D]" id='contact'>
+    viewport={{once:true, amount: 0.7}} className=" mt-8 sm:mt-24 text-[13px] sm:text-sm text-[#5D5D5D]" >
     <div className="w-full mb-4 px-4 sm:pl-48">
     <HeaderSection title="Get in Touch" color="#CE0000"/>
     </div>
@@ -28,6 +30,7 @@ function GetinTouch() {
     </Link>
     </div>
     </motion.div>
+    </>
   )
 }
 

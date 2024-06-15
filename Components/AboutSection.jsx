@@ -6,7 +6,9 @@ import{fadeIn} from "../variants"
 
 function AboutSection() {
   return (
-    <div id='about-me'>
+    <> 
+     <div id='about-me'>{""}</div>
+     <div>
         <motion.div className='w-full sm:w-1/2 px-3 sm:ml-48 mt-8 sm:mt-24 space-y-2 sm:space-y-6'
          variants={fadeIn("up", 0.3)}
          initial ="hidden"
@@ -42,6 +44,7 @@ function AboutSection() {
             </motion.div>
         </div>
     </div>
+    </>
   )
 }
 
