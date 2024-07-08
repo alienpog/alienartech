@@ -9,7 +9,6 @@ function ProjectHighlights() {
   return (
     <>
     <div id="projects">{""}</div>
-    <div>{" "}</div>
     <div className=" space-y-12 sm:space-y-24 mt-8 sm:mt-24 " >
         <motion.div 
          variants={fadeIn("up", 0.3)}

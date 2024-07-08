@@ -25,6 +25,9 @@ function GetinTouch() {
     <Link href="https://www.linkedin.com/in/komolafe-abbey-6b2538216/">
     <Image src="/asset/linkedicon.png" width={96} height={96} className='w-8 object-contain cursor-pointer hover:grayscale transition ease-in-out duration-300'/>
     </Link>
+    <Link href="https://github.com/alienpog">
+    <Image src="/asset/github.png" width={96} height={96} className='w-8 object-contain cursor-pointer hover:grayscale transition ease-in-out duration-300'/>
+    </Link>
     <Link href="https://x.com/AlienArTech">
     <Image src="/asset/twittericon.png" width={96} height={96} className='w-8 object-contain cursor-pointer hover:grayscale transition ease-in-out duration-300'/>
     </Link>
