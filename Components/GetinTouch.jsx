@@ -19,7 +19,7 @@ function GetinTouch() {
     <HeaderSection title="Get in Touch" color="#CE0000"/>
     </div>
     <p className="w-full sm:w-1/2 px-4 sm:pl-48">
-    <span>Interested in collaborating or discussing potential projects? Feel free to reach out via email at </span><a href="mailto:Okegbemigenius@gmail.com" className='text-blue-500'>Okegbemigenius@gmail.com</a> <span>You can also connect with me on LinkedIn and Twitter to stay updated on my latest work and insights.</span> 
+    <span>Interested in collaborating or discussing potential projects? Feel free to reach out via email at </span><a href="mailto:Okegbemigenius@gmail.com" className='text-blue-500'>Okegbemigenius@gmail.com</a> <span>You can also connect with me on LinkedIn, GitHub and Twitter to stay updated on my latest work and insights.</span> 
     </p>
     <div className='flex mt-6 justify-center space-x-16 w-full sm:w-1/2 sm:ml-48 '>
     <Link href="https://www.linkedin.com/in/komolafe-abbey-6b2538216/">
