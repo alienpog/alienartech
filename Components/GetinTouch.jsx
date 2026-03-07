@@ -14,12 +14,13 @@ function GetinTouch() {
     variants={fadeIn("up", 0.3)}
     initial ="hidden"
     whileInView={"show"}
-    viewport={{once:true, amount: 0.7}} className=" mt-8 sm:mt-24 text-[13px] sm:text-sm text-[#5D5D5D]" >
-    <div className="w-full mb-4 px-4 sm:pl-48">
+    viewport={{once:true, amount: 0.7}} className=" mt-24 sm:mt-48 text-[13px] sm:text-sm text-[#5D5D5D]" >
+    <div className="w-full mb-2 px-4 sm:pl-[10%]">
     <HeaderSection title="Get in Touch" color="#CE0000"/>
     </div>
-    <p className="w-full sm:w-1/2 px-4 sm:pl-48">
-    <span>Interested in collaborating or discussing potential projects? Feel free to reach out via email at </span><a href="mailto:Okegbemigenius@gmail.com" className='text-blue-500'>Okegbemigenius@gmail.com</a> <span>You can also connect with me on LinkedIn, GitHub and Twitter to stay updated on my latest work and insights.</span> 
+    <p className="w-full sm:w-1/2  px-4 sm:pl-[10%]">
+    <span>Interested in collaborating or discussing a project idea? I&apos;d love to hear from you. Reach out via email at </span><a href="mailto:hello.alienartech@gmail.com" className='text-blue-500 hover:underline'>hello.alienartech@gmail.com</a> <span>or connect with me on LinkedIn and Twitter to stay updated on my latest work and insights.</span> 
+    <span>You can also send me a message directly on WhatsApp at</span><span className='text-blue-500 hover:underline'>+234 906 880 1955.</span>
     </p>
     <div className='flex mt-6 justify-center space-x-16 w-full sm:w-1/2 sm:ml-48 '>
     <Link href="https://www.linkedin.com/in/komolafe-abbey-6b2538216/">

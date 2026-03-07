@@ -55,6 +55,12 @@ export const contents03 = [
 export const Project =[
   {
     "id": 1,
+    "image": "/asset/elonimg.png",
+    "name": "elongiveaway",
+    "url": "https://muskstar.vercel.app/"
+  },
+    {
+    "id": 2,
     "image": "/asset/projectss/A5 - 1.png",
     "name": "alienrealtor",
     "url": "https://alien-realtor.vercel.app/"

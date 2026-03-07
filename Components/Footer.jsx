@@ -5,7 +5,7 @@ import{fadeIn} from "../variants"
 
 function Footer() {
   return (
-    <div className=" relative rounded-t-xl mt-8 sm:mt-24 pt-24 overflow-hidden 2xl:bg-[#9522FB] text-white">
+    <div className=" relative rounded-t-xl mt-24 sm:mt-48 pt-24 overflow-hidden 2xl:bg-[#9522FB] text-white">
         <motion.div 
     variants={fadeIn("up", 0.3)}
     initial ="hidden"

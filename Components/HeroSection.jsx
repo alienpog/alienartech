@@ -1,15 +1,53 @@
 "use client"
+
 import Image from 'next/image'
-import React from 'react'
+import{ useState, useEffect } from 'react'
 import {motion} from "framer-motion"
 import{fadeIn} from "../variants"
 
+
 function HeroSection() {
+ 
+const words = ["Design.", "Engineer.", "Deliver."]
+  const [wordIndex, setWordIndex] = useState(0)
+  const [text, setText] = useState("")
+  const [isDeleting, setIsDeleting] = useState(false)
+
+  useEffect(() => {
+    const current = words[wordIndex]
+
+    const speed = isDeleting ? 50 : 100
+
+    const timer = setTimeout(() => {
+      if (!isDeleting) {
+        setText(current.substring(0, text.length + 1))
+
+        if (text === current) {
+          setTimeout(() => setIsDeleting(true), 1200)
+        }
+      } else {
+        setText(current.substring(0, text.length - 1))
+
+        if (text === "") {
+          setIsDeleting(false)
+          setWordIndex((prev) => (prev + 1) % words.length)
+        }
+      }
+    }, speed)
+
+    return () => clearTimeout(timer)
+  }, [text, isDeleting, wordIndex])
+
+
+  
   return (
     <div className='reletive flex flex-col justify-center items-center  pt-[100px] '>
-        <div className='max-w-3xl mt-4 sm:mt-8 mx-8'>
-        <h1 className='text-4xl lg:text-5xl font-extrabold text-[#000000] leading-[48px] lg:leading-[68px]'>Hello and welcome! I&apos;m Abbey known as alienartech</h1>
-        <h2 className='text-base font-medium text-[#464646] mt-3'>Am a Full-Stack Developer and UX/UI Designer.</h2>
+        <div className='max-w-3xl mt-6 sm:mt-8 lg:mt-28 mx-8 space-y-6 lg:space-y-12'>
+          <h1 className='text-5xl sm:text-7xl lg:text-9xl font-extrabold text-[#322020] leading-[80px] lg:leading-[128px] tracking-[5%]'>
+          I {text}
+          {/* <span className="animate-pulse">|</span> */}
+        </h1>
+        <h2 className='text-base font-medium text-[#322020] mt-3'>Hi, I&apos;m Abbey (AlienarTech) — I build products from concept to deployment, combining clean design with robust architecture.</h2>
         </div>
         <motion.div className='relative'
          variants={fadeIn("up", 0.2)}
@@ -20,14 +58,14 @@ function HeroSection() {
         src="/asset/2024_02_03_13_25_IMG_4611_edit 1.png"
         width={400}
         height={700}
-        className=""
+        className="max-w-[600px] w-full"
         alt="Picture of the author"
         />
         <div className='absolute -bottom-1 h-24 w-full  bg-gradient-to-t from-[#fffffa]  '/>
         </motion.div>
-        <div className='absolute top-0 -z-10 overflow-hidden w-full flex justify-center '>
+        <div className='absolute top-[-40%] sm:top-[-30%] lg:top-[-20%] -z-10 overflow-hidden w-full flex justify-center '>
         <div className="scale-110">
-        <svg width="959" height="590" viewBox="0 0 959 590" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="1918" height="1180" viewBox="0 0 959 590" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_f_3401_4)">
 <path d="M542.819 154.052C331.953 72.6637 241.452 274.55 226.258 310.172C183.138 388.291 84.0292 455.069 73.0107 484.554C72.6388 517.782 216.949 546.205 279.993 460.5C358.798 353.369 443.225 351.059 679.52 328.139C915.815 305.218 831.031 70.7695 817.125 109.996C803.219 149.222 753.685 235.44 542.819 154.052Z" fill="#FF8787" fill-opacity="0.2"/>
 </g>

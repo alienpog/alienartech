@@ -24,7 +24,7 @@ function NavBar() {
         className="w-12 object-contain"
         alt="Picture of the author"
         />
-        <div className="hidden text-[#4E4E4E] space-x-4 font-medium text-sm sm:flex">
+        <div className="hidden text-[#464646] space-x-4 font-medium text-sm sm:flex">
             <p className="navbarhover" onClick={()=>router.push('#about-me')}>About Me</p>
             <p className="navbarhover" onClick={()=>router.push('#projects')}>Projects</p>
             <p className="navbarhover" onClick={()=>router.push('#skills')}>Skills</p>

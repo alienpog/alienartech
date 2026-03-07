@@ -19,7 +19,7 @@ function Education() {
         <a href="alienartech cv word tech.docx" download className="text-sm font-semibold px-6 py-3 rounded-md shadow-lg text-white bg-[#C687FE] hover:shadow-none transition ease-in-out duration-500 animate-pulse">Download CV [Word]</a>
         </div>
         <div className="pt-6 ">
-        <a href="alienartech cv pdf tech.pdf" download className="text-sm font-semibold px-6 py-3 rounded-md shadow-lg text-white bg-[#FF3838] hover:shadow-none transition ease-in-out duration-500 animate-pulse">Download CV [PDF]</a>
+        <a href="alienartech cv pdf tech.pdfpublic/ABBEY_(AlienarTech)_CV.pdf" download className="text-sm font-semibold px-6 py-3 rounded-md shadow-lg text-white bg-[#FF3838] hover:shadow-none transition ease-in-out duration-500 animate-pulse">Download CV [PDF]</a>
         </div>
         </div>
         </motion.div>

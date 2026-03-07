@@ -1,10 +1,10 @@
 import React from 'react'
 
-function HeaderSection({title,color,content}) {
+function HeaderSection({title,color,content, className}) {
   return (
-    <div>
+    <div className={className}>
         <h3 className="text-2xl font-extrabold" style={{color:color}}>{title}</h3>
-        <p className='text-[13px] sm:text-sm font-light text-[#464646] '>{content}</p>
+        <p className='text-[13px] font-normal text-[#5D5D5D] '>{content}</p>
     </div>
   )
 }
