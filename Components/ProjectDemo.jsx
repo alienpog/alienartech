@@ -36,12 +36,16 @@ function ProjectDemo({ project }) {
         </div>
         </div>
           <div className="px-4">
-        <Image src={project.image}
-         width={2360} 
-         height={1686}
-         alt='image01'
-         className='max-w-[700px] w-full object-contain mt-6'
-        />
+        <Image
+        src={project.image}
+        width={2360}
+        height={1686}
+        alt="image01"
+        className="max-w-[700px] w-full object-contain mt-6"
+        loading="lazy"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." 
+      />
         </div>
         <div className='absolute -z-10 -top-10 sm:-top-[10%]  w-full max-w-[1200px] flex justify-center overflow-hidden'>
         <div className="scale-110">

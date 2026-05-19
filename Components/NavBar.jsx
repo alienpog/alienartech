@@ -33,6 +33,7 @@ function NavBar() {
         <Image src="/asset/Vector.png"
         width={500}
         height={500}
+        alt="vector icon"
         className="w-6 object-contain sm:hidden animate-pulse cursor-pointer"
         onClick={()=>setActive(true)}
         />

@@ -14,6 +14,9 @@ function ProjectContent({value}) {
          height={921}
          alt='image'
          className='max-w-[480px] w-full object-contain'
+         loading="lazy"
+         placeholder="blur"
+         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." 
         />
         </div>
      {value.id == 2 &&  <div className='absolute -z-10 -top-10 sm:-top-36  w-full max-w-[1200px] flex justify-center overflow-hidden'>

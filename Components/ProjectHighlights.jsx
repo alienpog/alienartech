@@ -129,6 +129,9 @@ function ProjectHighlights() {
                     height={172}
                     alt="icon"
                     className="w-[48px] object-contain"
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." 
                   />
 
                 </button>

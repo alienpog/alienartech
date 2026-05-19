@@ -47,7 +47,7 @@ const words = ["Design.", "Engineer.", "Deliver."]
           I {text}
           {/* <span className="animate-pulse">|</span> */}
         </h1>
-        <h2 className='text-base font-medium text-[#322020] mt-3'>Hi, I&apos;m Abbey (AlienarTech) — I build products from concept to deployment, combining clean design with robust architecture.</h2>
+        <h2 className='text-base font-medium text-[#322020] mt-3'>Hi, I&apos;m Abbey (AlienarTech) — I build products from concept to deployment, combining clean design, Technical SEO, and scalable, robust architecture.</h2>
         </div>
         <motion.div className='relative'
          variants={fadeIn("up", 0.2)}
@@ -55,11 +55,14 @@ const words = ["Design.", "Engineer.", "Deliver."]
          whileInView={"show"}
          viewport={{once:true, amount: 0.7}}>
         <Image
-        src="/asset/2024_02_03_13_25_IMG_4611_edit 1.png"
-        width={400}
-        height={700}
-        className="max-w-[600px] w-full"
-        alt="Picture of the author"
+          src="/asset/2024_02_03_13_25_IMG_4611_edit 1.png"
+          width={400}
+          height={700}
+          className="max-w-[600px] w-full"
+          alt="Picture of the author"
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." // tiny blurred base64 image
         />
         <div className='absolute -bottom-1 h-24 w-full  bg-gradient-to-t from-[#fffffa]  '/>
         </motion.div>

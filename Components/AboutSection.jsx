@@ -16,9 +16,11 @@ function AboutSection() {
          whileInView={"show"}
          viewport={{once:true, amount: 0.7}}>
         <h3 className='text-2xl font-extrabold text-[#322020]'>About Me</h3>
-        <p className='font-normal text-[13px] sm:text-sm text-[#5D5D5D] leading-6 lg:leading-8'>I&apos;m a dynamic Full-Stack Developer and Product Designer passionate about crafting seamless, high-performance digital experiences. With over 5+ years of hands-on experience, I operate at the intersection of engineering, design, and product strategy — transforming complex ideas into intuitive, scalable solutions.
-        I don&apos;t just build applications — I design systems.
-       From user research and wireframing to backend architecture and API development, I take ownership of the full product lifecycle. My work blends technical precision with aesthetic clarity, ensuring that every solution is both functional and visually compelling.</p>
+        <p className='font-normal text-[13px] sm:text-sm text-[#5D5D5D] leading-6 lg:leading-8'>I&apos;m a dynamic Full-Stack Developer, Product Designer, and Technical SEO Specialist passionate about crafting seamless, high-performance digital experiences. With over 6+ years of hands-on experience, I operate at the intersection of engineering, design, SEO, and product strategy — transforming complex ideas into intuitive, scalable solutions.
+
+I don&apos;t just build applications — I design systems.
+
+From user research and wireframing to backend architecture, API development, and SEO optimization, I take ownership of the full product lifecycle. My work blends technical precision with aesthetic clarity, ensuring every solution is both functional, fast, and visually compelling.</p>
         </motion.div>
     
       <div className="max-w-7xl mx-auto grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 sm:mt-24 px-4">

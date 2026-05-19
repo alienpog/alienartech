@@ -12,6 +12,10 @@ const contents = [
    "value":"I'm fluent in Python, JavaScript, HTML, CSS, and SQL, empowering me to architect and implement versatile solutions across the web."
   },
   {
+  "key": "Technical SEO",
+  "value": "I specialize in Technical SEO, optimizing websites for search engines by improving site structure, performance, Core Web Vitals, indexing, and structured data to ensure better visibility, faster load times, and higher rankings in search results."
+  },
+  {
     "key": "API Development",
    "value":"I specialize in creating robust APIs that serve as the backbone of modern web applications, facilitating smooth data exchange and integration."
   },

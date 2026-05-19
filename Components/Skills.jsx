@@ -23,6 +23,18 @@ function Skills() {
             </div>
             <p>Full-stack web development</p>
             </div>
+             <div className=" flex items-center space-x-3 w-full md:w-[450px]">
+            <div>
+            <StarIcon className="w-4 h-4 text-[#F84043]"/>
+            </div>
+            <p>SEO-Friendly Web Dev</p>
+            </div>
+             <div className=" flex items-center space-x-3 w-full md:w-[450px]">
+            <div>
+            <StarIcon className="w-4 h-4 text-[#F84043]"/>
+            </div>
+            <p>Technical SEO Implementation</p>
+            </div>
             <div className=" flex items-center space-x-3 w-full md:w-[450px]">
             <div>
             <StarIcon className="w-4 h-4 text-[#F84043]"/>
