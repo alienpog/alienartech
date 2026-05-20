@@ -11,7 +11,9 @@ function Footer() {
     initial ="hidden"
     whileInView={"show"}
     viewport={{once:true, amount: 0.7}} className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6">
-        <Image src="/asset/tech figma 1.png" width={320} height={320} className='w-28 object-contain cursor-pointer'/>
+        <Image src="/asset/tech figma 1.png" alt="logo" width={320} height={320} className='w-28 object-contain cursor-pointer'  loading="lazy"
+         placeholder="blur"
+         blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzE4MTgxYiIvPjwvc3ZnPg==" />
         <div className="max-w-[400px]">
             <h2 className="text-[28px] font-bold text-center mb-2">Thank you for visiting!</h2>
             <p className="text-center text-sm font-normal">Thank you for taking the time to explore my portfolio. I&apos;m excited about the opportunity to contribute to innovative projects and make a meaningful impact in the tech industry. Let&apos;s create something amazing together!</p>

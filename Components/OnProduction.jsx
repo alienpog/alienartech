@@ -20,7 +20,7 @@ function OnProduction() {
         <div className="relative ">
         <div className="absolute right-0 h-full w-24 bg-gradient-to-l from-[#FFFFFA] z-10"/>
         <div className="flex justify-start p-6 gap-x-6 lg:gap-x-10 overflow-x-auto scrollbar-thumb-rounded-full scrollbar-thumb-[#FF3838] scrollbar-thin">
-          {Project.map(production => <Link href={production.url} target="_blank" key={production.id} ><Image src= {production.image} width={500} height={500} className="max-w-[100px] object-contain rounded-lg hover:scale-110 hover:opacity-80 hover:shadow-lg hover:shadow-[#E9DBF0] transform all ease-in-out duration-500 cursor-pointer animate-pulse" alt={`${production.name}`} placeholder='blur' blurDataURL='URL'/></Link>)}
+          {Project.map(production => <Link href={production.url} target="_blank" key={production.id} ><Image src= {production.image} width={500} height={500} className="max-w-[100px] object-contain rounded-lg hover:scale-110 hover:opacity-80 hover:shadow-lg hover:shadow-[#E9DBF0] transform all ease-in-out duration-500 cursor-pointer animate-pulse" alt={`${production.name}`}  loading="lazy" placeholder="blur" blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzE4MTgxYiIvPjwvc3ZnPg==" /></Link>)}
            <div className="min-w-[320px] h-[100px] flex flex-col space-y-6 justify-center items-center rounded-lg bg-[#f6dbdb] mr-7 px-4 py-2">
             <p className="w-full text-[#f01c1c] text-center text-[12px] font-medium">More Projects are still yet to be on Production or not on Data yet</p>
            </div>

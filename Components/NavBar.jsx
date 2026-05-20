@@ -23,6 +23,9 @@ function NavBar() {
         height={500}
         className="w-12 object-contain"
         alt="Picture of the author"
+         loading="lazy"
+         placeholder="blur"
+         blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzE4MTgxYiIvPjwvc3ZnPg==" 
         />
         <div className="hidden text-[#464646] space-x-4 font-medium text-sm sm:flex">
             <p className="navbarhover" onClick={()=>router.push('#about-me')}>About Me</p>

@@ -62,7 +62,7 @@ const words = ["Design.", "Engineer.", "Deliver."]
           alt="Picture of the author"
           loading="lazy"
           placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..." // tiny blurred base64 image
+         blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzE4MTgxYiIvPjwvc3ZnPg=="
         />
         <div className='absolute -bottom-1 h-24 w-full  bg-gradient-to-t from-[#fffffa]  '/>
         </motion.div>
