@@ -17,8 +17,8 @@ function UserContent({content}) {
        {content.bodyname1 && <p style={{ color: colorchange()}} className='text-[13px] sm:text-sm leading-5'>{content.bodyname1}</p>}
        <div className='space-y-2'>
        {content.contentloop01 && 
-       content.contentloop01.map(value =>
-        <div className=" flex items-center space-x-2 w-full md:w-[450px] space-y-2 lg:leading-5 ">
+       content.contentloop01.map((value, index) =>
+        <div key={index} className=" flex items-center space-x-2 w-full md:w-[450px] space-y-2 lg:leading-5 " >
             <div>
             <StarIcon style={{ color:content.color}} className="w-4 h-4"/>
             </div>

@@ -5,7 +5,23 @@ import{fadeIn} from "../variants"
 import ProjectContent from "./ProjectContent"
 
 function ProjectDemo({ project }) {
+const shimmer = `
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffb6d9" offset="0%"/>
+      <stop stop-color="#a7d8ff" offset="100%"/>
+    </linearGradient>
+  </defs>
 
+  <rect width="100%" height="100%" fill="url(#g)"/>
+</svg>
+`;
+
+const toBase64 = (str) =>
+  typeof window === "undefined"
+    ? Buffer.from(str).toString("base64")
+    : window.btoa(str);
   return (
     <div className="">
     <motion.div 
@@ -44,7 +60,7 @@ function ProjectDemo({ project }) {
         className="max-w-[700px] w-full object-contain mt-6"
         loading="lazy"
         placeholder="blur"
-        blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzE4MTgxYiIvPjwvc3ZnPg=="
+        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer)}`}
       />
         </div>
         <div className='absolute -z-10 -top-10 sm:-top-[10%]  w-full max-w-[1200px] flex justify-center overflow-hidden'>

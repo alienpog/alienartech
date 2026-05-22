@@ -3,6 +3,24 @@ import Image from "next/image"
 import React from 'react'
 import UserContent from "./UserContent"
 function ProjectContent({value}) {
+
+ const shimmer = `
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffb6d9" offset="0%"/>
+      <stop stop-color="#a7d8ff" offset="100%"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#g)"/>
+</svg>
+`;
+
+const toBase64 = (str) =>
+  typeof window === "undefined"
+    ? Buffer.from(str).toString("base64")
+    : window.btoa(str);
   return (
      <div className="relative lg:flex flex-row justify-between items-center gap-6 max-w-[1200px] mx-auto mb-24">
         <div className=" px-4 max-w-[600px]">
@@ -16,7 +34,7 @@ function ProjectContent({value}) {
          className='max-w-[480px] w-full object-contain'
          loading="lazy"
          placeholder="blur"
-         blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iIzE4MTgxYiIvPjwvc3ZnPg==" 
+         blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer)}`}
         />
         </div>
      {value.id == 2 &&  <div className='absolute -z-10 -top-10 sm:-top-36  w-full max-w-[1200px] flex justify-center overflow-hidden'>
